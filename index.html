@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bkash Calculator</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <div class="form-row">
+    <label for="price" class="form-label">Dress price:</label>
+    <label for="delivery" class="form-label">Delivery charge:</label>
+  </div>
+  <div class="form-row">
+    <input
+      type="number"
+      id="price"
+      min="1"
+      placeholder="Dress price"
+      class="form-input"
+    />
+    <select id="delivery" class="form-select">
+      <option value="130" selected>130</option>
+      <option value="100">100</option>
+    </select>
+  </div>
+  
+  
+
+  
+  <pre id="output">
+    Dress price         :       Taka
+    Delivery Charge     :   130 Taka
+    Bkash Charge        :   1.3%
+    Total Amount        :       Taka
+
+    Including bkash and delivery charge.
+    Please pay by tomorrow 6 pm. We will not keep the order after that if the payment is not made within that time.(R)
+  </pre>
+
+  <button id="copyBtn">Copy Text</button>
+  <script type="module" src="popup.js"></script>
+
+</body>
+</html>

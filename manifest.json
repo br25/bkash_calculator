@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Bkash Calculator",
+    "version": "1.0.1",
+    "description": "Calculate product price, delivery charge, Bkash percentage, total amount.",
+    "icons": {
+        "32": "icons/black_teeth.png"
+    },          
+    "permissions": ["activeTab", "scripting"],
+    "host_permissions": ["<all_urls>"],
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": "icons/black_teeth.png"
+    },
+    "web_accessible_resources": [
+      {
+        "resources": ["styles/style.css"],
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }
+  
