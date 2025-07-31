@@ -6,7 +6,17 @@
     "icons": {
         "32": "icons/black_teeth.png"
     },          
-    "permissions": ["activeTab", "scripting"],
+    "permissions": ["scripting", "tabs", "activeTab"],
+	"host_permissions": ["https://erp.closetcloudbd.com/invoice/*"],
+	"background": {
+		"service_worker": "background.js"
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://erp.closetcloudbd.com/invoice/*"],
+			"js": ["contentScript.js"]
+		}
+	],
     "host_permissions": ["<all_urls>"],
     "action": {
       "default_popup": "index.html",
@@ -14,7 +24,7 @@
     },
     "web_accessible_resources": [
       {
-        "resources": ["styles/style.css"],
+        "resources": ["styles/style.css", "html2canvas.min.js"],
         "matches": ["<all_urls>"]
       }
     ]

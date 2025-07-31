@@ -130,3 +130,25 @@ body.night {
   --pre-bg: #1e1e2e;
   --pre-border: #444;
 }
+
+.top-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+#showBkashBtn {
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+#showBkashBtn:hover {
+  background-color: var(--button-hover);
+}
